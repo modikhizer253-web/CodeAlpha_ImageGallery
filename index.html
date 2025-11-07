@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="city">City</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+        </div>
+        <div class="gallery">
+            <img src="./nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="Nature 1" data-category="nature">
+            <img src="./istockphoto-471926619-612x612.jpg" alt="Nature 2" data-category="nature">
+            <img src="./images.jpg" alt="Nature 3" data-category="nature">
+            <img src="./C7jX58aWkAEKtfH.jpg" alt="City 1" data-category="city">
+            <img src="./image-20250711175354-1.jpeg" alt="City 2" data-category="city">
+            <img src="./The-Eiffel-Tower-Frances-Global-Icon.jpg" alt="City 3" data-category="city">
+            <img src="./WI070119_FF_Lionking_01.jpg" alt="Animals 1" data-category="animals">
+            <img src="./20241030-817A8773-16RP.jpg" alt="Animals 2" data-category="animals">
+            <img src="./Cheetah-donation-segment-georgelogan.co_.uk_-1292x1080.jpg" alt="Animals 3" data-category="animals">
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <button class="nav-btn prev" id="prev-btn">&larr;</button>
+        <button class="nav-btn next" id="next-btn">&rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
